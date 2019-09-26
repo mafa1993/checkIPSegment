@@ -12,7 +12,7 @@ function checkIpSegment (content) {
         content_arr = content.split('/');
         ip = content_arr[0];
         segment = content_arr[1];
-        if(isNaN(segment) || segment > 32 || segment === '' || segment < 0 || parseInt(segment) !== segment || segment.includes('.')){
+        if(isNaN(segment) || segment > 32 || segment === '' || segment < 0 || parseInt(segment) != segment || segment.includes('.')){
             return false;
         }
     }else {
